@@ -24,8 +24,8 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem !important;
-  font-weight: 500 !important;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 h3 {
@@ -50,13 +50,147 @@ a {
   font-weight: 600 !important;
 }
 
-.container {
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
-  background-image: url("https://raw.githubusercontent.com/AlwinSunil/IntroComponent/main/app/img/bg-intro-desktop.png");
-  padding-left: 7vw;
-  padding-right: 7vw;
-  background-repeat: no-repeat;
+@media screen and (min-width: 750px) {
+  body, html {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .container {
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    background-image: url("https://raw.githubusercontent.com/AlwinSunil/IntroComponent/main/app/img/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+  .warning-banner {
+    width: 100vw;
+    height: auto;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    background-color: #dc2626;
+    text-align: center;
+    padding: 2vh 0vh;
+  }
+  #warning-banner-p {
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    opacity: 100%;
+    font-size: 2.5vh;
+    display: none;
+  }
+  #warning-banner-dismiss-btn {
+    display: none;
+    padding-top: 0.2vh;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-size: 2.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 5vh 0 5vh;
+  }
+  .right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .left h2 {
+    font-weight: 700 !important;
+  }
+  .left p {
+    padding: 3vh 2vh 0 0;
+    font-size: 1.25rem;
+  }
+  .trail-banner {
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(96, 85, 165, 0.4);
+            box-shadow: 0px 5px 0px 0px rgba(96, 85, 165, 0.4);
+    margin: 5vh 5vh 0 5vh;
+  }
+  .trail-banner p {
+    text-align: center;
+    opacity: 100%;
+    font-weight: 400 !important;
+    padding: 3vh 7vh 3vh 7vh;
+    background-color: #6055a5;
+    border-radius: 1rem;
+  }
+  .trail-banner strong {
+    font-weight: 600;
+  }
+  form {
+    padding: 2vh 4vh 2vh 4vh;
+    display: block;
+  }
+  .field {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  input {
+    font-family: inherit;
+    -webkit-appearance: none;
+    border-radius: 0;
+    cursor: text;
+    width: 95%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: #000000;
+    border: #f0f0f0 solid 3px;
+  }
+  textarea:focus,
+  input:focus,
+  button {
+    outline: none;
+    -webkit-box-shadow: 0 2px #6055a5;
+            box-shadow: 0 2px #6055a5;
+  }
+  .form {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    margin: 5vh;
+  }
+  .submit-button {
+    width: 100%;
+    background-color: #38cc8c;
+    color: #ffffff;
+    margin: 2vh 0 2vh 0;
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(56, 204, 140, 0.4);
+            box-shadow: 0px 5px 0px 0px rgba(56, 204, 140, 0.4);
+    border-color: #38cc8c;
+    border-style: solid;
+    border-radius: 0.5rem;
+    line-height: 1rem;
+    padding: 0.5rem;
+  }
+  form p {
+    color: #b9b6d3;
+    font-size: 0.8rem !important;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  form a {
+    color: #ff6666;
+    font-size: 0.8rem !important;
+  }
+  label {
+    color: #3e3c49;
+    padding: 0 0 0.75rem 0.25rem;
+    font-weight: 500;
+  }
 }
 
 .watermark {
@@ -102,17 +236,23 @@ a {
   }
   #warning-banner-dismiss-btn {
     display: none;
+    padding-top: 1vh;
   }
   .container {
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
     background-image: url("https://raw.githubusercontent.com/AlwinSunil/IntroComponent/main/app/img/bg-intro-mobile.png") !important;
+    background-repeat: no-repeat;
+    padding-left: 7vw;
+    padding-right: 7vw;
     height: auto !important;
   }
   .hero {
     padding-top: 10vh;
-    padding-bottom: 10vh;
   }
-  .right {
+  .left {
     text-align: center;
+    padding-bottom: 10vh;
   }
   .right h2 {
     font-weight: 700 !important;
@@ -149,8 +289,7 @@ a {
     border-radius: 0.5rem;
     padding: 0.5rem;
     color: #000000;
-    border-color: #f2f2f2;
-    border-style: solid;
+    border: #f0f0f0 solid 3px;
   }
   textarea:focus,
   input:focus,

@@ -36,12 +36,8 @@ function pageReload() {
       document.getElementById("warning-banner").style.height = "7vh";
     }, 200);
   }
-  // setTimeout(() => {
-  //   document.getElementById("warning-banner").style.height = "10vh";
-  // }, 200);
   setTimeout(() => {
-    document.getElementById("warning-banner-dismiss-btn").style.display =
-      "block";
+    document.getElementById("warning-banner-dismiss-btn").style.display = "block";
   }, 100);
 }
 
@@ -62,7 +58,4 @@ function fadeIn() {
       document.getElementById("warning-banner").style.height = "4vh";
     }, 200);
   }
-  // setTimeout(() => {
-  //   document.getElementById("warning-banner").style.height = "7vh";
-  // }, 100);
 }

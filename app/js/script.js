@@ -5,6 +5,7 @@ window.onload = function () {
   warningBanner();
   window.scrollTo(0, 0);
   document.getElementById("loader-wrapper").style.opacity = "0";
+  document.getElementById("loader-wrapper").style.display = "none";
 };
 
 function warningBanner() {
@@ -38,7 +39,8 @@ function pageReload() {
     }, 200);
   }
   setTimeout(() => {
-    document.getElementById("warning-banner-dismiss-btn").style.display = "block";
+    document.getElementById("warning-banner-dismiss-btn").style.display =
+      "block";
   }, 100);
 }
 

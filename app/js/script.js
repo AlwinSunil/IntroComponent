@@ -4,6 +4,7 @@ console.log(screenWidth);
 window.onload = function () {
   warningBanner();
   window.scrollTo(0, 0);
+  document.getElementById("loader-wrapper").style.opacity = "0";
 };
 
 function warningBanner() {

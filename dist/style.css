@@ -344,7 +344,9 @@ a {
     transition: all 0.4s linear;
     display: none;
     background-color: #dc2626;
-    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 2vh 7vw;
     height: 0px;
   }

@@ -113,6 +113,39 @@ a {
   }
 }
 
+// Warning Banner
+.warning-banner {
+  transition: all 0.25s linear;
+  display: flex;
+  flex-direction: column;
+  background-color: #dc2626;
+  text-align: center;
+  padding: 0.9rem 2rem;
+  height: auto;
+}
+#warning-banner-p {
+  display: flex;
+  justify-content: center;
+  transition: all 0.25s ease-in-out;
+  position: relative;
+  opacity: 100%;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#close-button {
+  display: none;
+  font-size: 0px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: underline !important;
+  transition: all 0.25s linear;
+}
+#close-button:hover {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 750px) {
   body, html {
     height: 100vh;
@@ -125,24 +158,6 @@ a {
     background-repeat: no-repeat;
     padding-left: 12vw;
     padding-right: 12vw;
-  }
-  .warning-banner {
-    width: 100vw;
-    height: auto;
-    transition: all 0.4s linear;
-    background-color: #dc2626;
-    text-align: center;
-    padding: 2vh 0vh;
-  }
-  #warning-banner-p {
-    transition: all 0.4s ease-out;
-    opacity: 100%;
-    font-size: 2.5vh;
-    display: none;
-  }
-  #warning-banner-dismiss-btn {
-    display: none;
-    padding-top: 0.2vh;
   }
   .hero {
     display: flex;
@@ -263,26 +278,6 @@ a {
   html,
   body {
     height: auto !important;
-  }
-  .warning-banner {
-    transition: all 0.4s linear;
-    display: none;
-    background-color: #dc2626;
-    justify-content: center;
-    padding: 2vh 7vw;
-    height: 0px;
-  }
-  #warning-banner-p {
-    transition: all 0.4s ease-out;
-    position: relative;
-    opacity: 100%;
-    font-size: 2.5vh;
-    display: none;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  #warning-banner-dismiss-btn {
-    display: none;
   }
   .container {
     transition: all 0.4s linear;
